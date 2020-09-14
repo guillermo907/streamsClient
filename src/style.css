@@ -1,0 +1,23 @@
+
+body{
+    background: url('./fondo1.jpg') no-repeat
+    center center/cover;
+    transition-property: background-color;
+    transition-duration: 2s;
+    position: relative;
+}
+body::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffffcb, #ffffff93); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/*  .ui.secondary.pointing.menu .item{
+    color: white;
+}*/
